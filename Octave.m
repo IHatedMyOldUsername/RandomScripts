@@ -1,0 +1,8 @@
+x = 0:10;
+y = 0:10;
+z = sin(x) + sin(y)
+plot3(x,z,z);
+xlabel("Idk");
+ylabel("wtf")
+zlabel("z");
+title("Sin by Sin")
