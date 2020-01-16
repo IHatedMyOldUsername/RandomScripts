@@ -5,7 +5,7 @@ fail = 0
 with open('words.txt') as words:
     wordList = words.readlines()
     for word in wordList:
-        print(word)
+        pnt(word)
         if('cie' in word):
             fail = fail+1
             print(fail)
