@@ -5,13 +5,13 @@ def calcPrime(num):
         try:    
             primeNumbers.append(nonPrime[0])
         except IndexError:
-            return(primeNumbers)
+            break;
         for j in range(2,int(num/nonPrime[0])+1):
             try:
                 nonPrime.remove(nonPrime[0]*j)
             except ValueError:
                 pass
         nonPrime.pop(0)
+        return(primeNumbers[num-1])
 
-allPrimes = calcPrime(110000)
-print(allPrimes[10000])
+print(calcPrime(110000))
