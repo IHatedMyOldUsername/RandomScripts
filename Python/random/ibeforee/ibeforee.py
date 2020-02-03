@@ -1,8 +1,8 @@
 import re
 
-win=0
-fail = 0
 with open('words.txt') as words:
+    win = 0
+    fail = 0
     wordList = words.readlines()
     for word in wordList:
         if('cie' in word):
