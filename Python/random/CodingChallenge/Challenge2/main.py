@@ -1,18 +1,15 @@
 import re
 
 def dataSeparator(inputString):
-    outputList = list()
+    outputString = ''
     counter = 0
     counter2 = 0
     for char in inputString:
-        print(char, counter, counter2)
         if char == ' ':
-            outputList.append(inputString[counter-1:counter2-1])
-            counter = counter2 + 1
-            counter2 = counter
+            pass;
         else:
-            counter2 =+ 1
-    return(outputList)
+            outputString = outputString + char
+    return(outputString)
 
 with open('j.in', 'r') as chin:
     refinedChin = chin.readlines()
