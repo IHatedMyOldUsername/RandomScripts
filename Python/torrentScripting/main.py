@@ -1,5 +1,6 @@
 import bs4
-import requests
+from requests_html import HTMLSession
+from selenium import webdriver
 
 def queryConv(baseString):
     final = ''
@@ -10,10 +11,13 @@ def queryConv(baseString):
         else:
             final = final + char
     print(final)
-    return(final)
+    return('http://pirate-bay.net/search?q=' + final)
 
-pbURL = 'https://thepiratebay.org/search.php?q='
 toFind = input('What do you want me to find? ')
 toFind = queryConv(toFind)
-query = requests.get(pbURL + toFind)).text
 
+browser = webdriver.Firefox()
+browser.get(toFind)
+
+elements = cleanQuery.find_all('tr')
+print(elements)
