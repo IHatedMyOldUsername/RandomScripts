@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 url = 'http://nytimes.com'
 r = requests.get(url)
 r_html = r.text

@@ -1,6 +1,8 @@
 import bs4
 from requests_html import HTMLSession
 from selenium import webdriver
+from tpb import TPB
+from tpb import CATEGORIES, ORDERS
 
 def queryConv(baseString):
     final = ''
@@ -16,8 +18,6 @@ def queryConv(baseString):
 toFind = input('What do you want me to find? ')
 toFind = queryConv(toFind)
 
-browser = webdriver.Firefox()
-browser.get(toFind)
 
 elements = cleanQuery.find_all('tr')
 print(elements)

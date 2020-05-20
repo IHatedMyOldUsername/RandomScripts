@@ -1,0 +1,14 @@
+1588584821670	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg6STiD"
+Gtk-Message: 02:33:41.707: Failed to load module "appmenu-gtk-module"
+1588584822407	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588584823361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588584823361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588584823362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588584823362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 02:33:44.291: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:33:44.627: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:33:46.408: Failed to load module "appmenu-gtk-module"
+1588584826558	Marionette	INFO	Listening on port 34323
+1588584826592	Marionette	WARN	TLS certificate errors will be ignored for this session
+Gtk-Message: 02:33:59.353: Failed to load module "appmenu-gtk-module"
+1588584847646	Marionette	INFO	Stopped listening on port 34323
