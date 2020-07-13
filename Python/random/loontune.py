@@ -17,5 +17,15 @@ for i in range(1,27):
             for realEp in episodeList:
                 if(realEp[5:][:-4] == epDB):
                     SeasonEp = str(tabrow.find('td')).strip()[4:-5]
-
+                    SeasonEp = {'Season':SeasonEp[1:3], 'Episode':SeasonEp[4:]}
+                    """
+                    switch = True
+                    while switch:
+                        try:
+                            os.rename(realEp, 'Season ' + SeasonEp['Season'] + '/Looney Tunes - s' + SeasonEp['Episode'] + 'e' + SeasonEp['Episode'])
+                            switch = False
+                        except FileNotFoundError:
+                            os.makedirs('Season ' + SeasonEp['Season'])
+                    """
+                    
 #To remind yourself: you were working on getting season episode data out of what you just did
