@@ -1,1 +1,0 @@
-prevent certain people from editing.
